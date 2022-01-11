@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+
+
+    <style>
+        .photo-frame {
+            width: 200px;
+            height: 300px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+
+        }
+
+        .photo img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 200px;
+            top: 0;
+        }
+
+        .photo-detail h3 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(247, 255, 240, 0.582);
+        }
+
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>My pats photo album</h1>
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/cat.png" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>CAT</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident placeat cum voluptate. Tempora
+                    asperiores quos, natus quaerat est animi ratione quasi voluptatum sunt, doloremque a vel magnam
+                    impedit blanditiis sequi.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/cat.png" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>CAT</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident placeat cum voluptate. Tempora
+                    asperiores quos, natus quaerat est animi ratione quasi voluptatum sunt, doloremque a vel magnam
+                    impedit blanditiis sequi.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/cat.png" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>CAT</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident placeat cum voluptate. Tempora
+                    asperiores quos, natus quaerat est animi ratione quasi voluptatum sunt, doloremque a vel magnam
+                    impedit blanditiis sequi.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
